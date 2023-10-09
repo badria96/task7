@@ -25,7 +25,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/material-icons/iconfont/material-icons.css",
+              "node_modules/font-awesome/css/font-awesome.min.css"
+
             ],
             "scripts": []
           },
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c76b23bd-347c-421d-a2aa-a4e7f398c99b"
   }
 }

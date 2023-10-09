@@ -1,0 +1,34 @@
+<div class="container">
+<form (ngSubmit)="onSubmit()">
+  <h2>Enter the new staff or patient</h2>
+  <br>
+  <div class="form-group">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" [(ngModel)]="staffName" required>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="position">Role: </label>
+    <select id="position" name="position" [(ngModel)]="staffPosition" required>
+      <option value="Doctor">Doctor</option>
+      <option value="Patient">Patient</option>
+    </select>
+  </div>
+ <br>
+  <div *ngIf="staffPosition === 'Doctor'">
+    <div class="form-group">
+      <label for="specialty">Specialty: </label>
+      <input type="text" id="specialty" name="specialty" [(ngModel)]="doctorSpecialty" required>
+    </div>
+  </div>
+  <br>
+  <div *ngIf="staffPosition === 'Patient'">
+    <div class="form-group">
+      <label for="age">Age: </label>
+      <input type="number" id="age" name="age" [(ngModel)]="patientAge" required>
+    </div>
+  </div>
+  <br>
+  <button type="submit" style="color: #fcfbfb; background-color: rgba(0, 0, 255, 0.581); border-radius: 10px; width: 80px; height:40px;align-items: center;">Add Staff</button>
+</form>
+</div>

@@ -1,0 +1,20 @@
+/* dashboard.component.css */
+.dashboard {
+    background-color: #ece2e220;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .dashboard h2 {
+    color: #333;
+  }
+  
+  .logo img {
+    max-height: 150px;
+    align-items: center;
+    margin-top: 0%;
+    border-radius: 20%;
+    margin-left: 10px;
+    animation:alternate;
+  }
